@@ -3,3 +3,10 @@
 #  Values will be your respective names.
 #  Write a function that takes a Hash and returns the full name.
 #  Print on console the result.
+def find_name(names)
+  puts "#{names[:firstname]}"
+  puts "#{names[:middle_name]}"
+  puts "#{names[:lastname]}"
+end
+
+p find_name({ firstname: 'Juan', middle_name: 'Ponce', lastname: 'Enrile' })
