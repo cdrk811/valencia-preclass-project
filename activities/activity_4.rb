@@ -7,13 +7,9 @@ def single_number(ages)
   ages.each do |age|
     count = 0
     ages.each do |age2|
-      if age == age2
-        count = count + 1
-      end
+      count = count + 1 if age == age2
     end
-    if count == 1
-      uniqueArray << age
-    end
+    uniqueArray << age if count == 1
   end
   uniqueArray
 end
